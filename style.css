@@ -2,165 +2,162 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
- body {
-     background-color: rgb(230,255,230);
- }
-
- .main {
-     width: 90%;
-     height: auto;
- }
-
- /* Header Style */
- .header {
-     width: 100%;
-     height: auto;
- }
-.header > h1 > span {
-    color: rgb(255,192,1);
-}
-.header > h1 {
-color: rgb(235,228,228);
-position: relative;
-float: left;
-margin-top: 25px;
-margin-left: 10px;
-font-size: large;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-/* navigation bar overall style */
 nav {
     width: 100%;
-    background-color: rgb(115,161,152);
-    height: 70px;
-    margin-top: 30px;
-    border: 3px solid rgb(91,137,84);
-    color: rgb(235,228,228));
+    height: 80%;
+    background-color: rgb(5, 148, 5);
+    min-height: 8vh;
 }
 
-nav > ul {
-    list-style-type: none;
-}
+.logo {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 21%;
+    font-size: 18px;
+    font-style: oblique;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+    
 
-nav > ul > li {
+}
+.nav-links {
     float: right;
-    margin-right: 30px;
-    line-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-bottom: 20px;
 }
 
-nav > ul > li > a {
+ul > li {
+    list-style: none;
+
+}
+
+.nav-links > li > a {
     text-decoration: none;
-    display: block;
-    font-size: large;
-    color: rgb(235,288,228);
-    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+
 }
 
-/* Content Overall style */
-.content > h1 {
-    font-family: 'Times New Roman', Times, serif;
+.nav-links > li > a:hover {
+    background-color: rgb(160, 221, 160);
 }
 
-.content > h2 {
-    color: grey;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+/* Form Style */
+.form {
+    width: 600px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 3px;
+    box-shadow: 5px 10px 10px 20px rgba(0,0,0,0.4);
 }
-.content > img {
+
+.form > h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form p {
+    font-weight: bold;
+}
+
+.student-info {
+    margin-top: 30px;
+}
+
+.student-info h3 {
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.info {
+    width: 80%; 
+
+}
+
+input {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn button {
+    width: 70px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.children video {
     width: 100%;
-    height: 70vh;
+    height: 600px;
 }
-.content > p {
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
+ 
+/* Contact Style */
+.contact {
+    width: 500px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
+    background-color: seagreen;
+    margin-top: 30px;
 }
 
-/* footer allover style */
+.contact input {
+    padding: 10px;
+}
+
+.get {
+    width: 80%;
+
+}
+
+.btn2 button {
+    width: 70px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    margin-bottom: 15PX;
+}
+
+.staff {
+    width: 50%;
+    height: 20%px;
+    text-align: center;
+}
+
+h2 {
+    width: 50%;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
 .footer {
     width: 100%;
-    background-color: rgb(115,161,152);
     height: 70px;
+    background-color: rgb(5, 148, 5);
     margin-bottom: 30px;
     font-size: larger;
     line-height: 70px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    border: 3px solid rgb(91,137,84);
-    color: rgb(235,228,228));
+    color: #fff;
 }
 
-/* Table Style */
-.note > Table {
-    border: 1px solid rgb(85,97,87);
-    width: 100%;
-    height: 50vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(102,153,102);
+.campus {
+    float: right;
 }
 
-.rat {
-    text-align: left;
+.teacher {
+    float: left;
+    margin-bottom: 60px;
 }
+ .container2 h1 {
+     text-align: center;
 
-.note {
-    background-color: rgb(185,219,192);
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* Form style */
-.form {
-    background-color: rgb(57, 214, 106);
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.form > h2 {
-    margin-left: 20px;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.form > h3 {
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.form > form > label {
-    font-size: 20px;
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.form > form > input {
-    width: 92%;
-    border-radius: 5px;
-    height: 5vh;
-    border: 1px solid white;
-    margin-left: 20px;
-}
-
-.m > input {
-    width: 92%;
-    border-radius: 5px;
-    height: 10vh;
-    border: 1px solid white;
-    margin-left: 20px;
-}
-
-.m > button {
-    width: 92%;
-    margin-left: 20px;
-    border-radius: 5px;
-    height: 5vh;
-    border: 1px solid rgb(84,130,53);
-    color: white;
-    background-color: rgb(84,130,53);
-    text-align: center;
-}
+ }
