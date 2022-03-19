@@ -1,163 +1,118 @@
-/* Basic Style */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-nav {
-    width: 100%;
-    height: 80%;
-    background-color: rgb(5, 148, 5);
-    min-height: 8vh;
-}
-
-.logo {
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    width: 21%;
-    font-size: 18px;
-    font-style: oblique;
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
-    
-
-}
-.nav-links {
-    float: right;
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    margin-bottom: 20px;
-}
-
-ul > li {
-    list-style: none;
-
-}
-
-.nav-links > li > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-
-}
-
-.nav-links > li > a:hover {
-    background-color: rgb(160, 221, 160);
-}
-
-/* Form Style */
-.form {
-    width: 600px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: white;
-    padding: 3px;
-    box-shadow: 5px 10px 10px 20px rgba(0,0,0,0.4);
-}
-
-.form > h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.form p {
-    font-weight: bold;
-}
-
-.student-info {
-    margin-top: 30px;
-}
-
-.student-info h3 {
-    text-decoration: underline;
-    margin-bottom: 5px;
-}
-.info {
-    width: 80%; 
-
-}
-
-input {
-    text-align: center;
-}
-
-label {
-    font-weight: bold;
-}
-
-.btn button {
-    width: 70px;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    border-radius: 6px;
-}
-
-.children video {
-    width: 100%;
-    height: 600px;
-}
- 
-/* Contact Style */
-.contact {
-    width: 500px;
-    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
-    background-color: seagreen;
-    margin-top: 30px;
-}
-
-.contact input {
-    padding: 10px;
-}
-
-.get {
-    width: 80%;
-
-}
-
-.btn2 button {
-    width: 70px;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    border-radius: 6px;
-    margin-bottom: 15PX;
-}
-
-.staff {
-    width: 50%;
-    height: 20%px;
-    text-align: center;
-}
-
-h2 {
-    width: 50%;
-    padding: 5px;
-    text-transform: uppercase;
-}
-
-.footer {
-    width: 100%;
-    height: 70px;
-    background-color: rgb(5, 148, 5);
-    margin-bottom: 30px;
-    font-size: larger;
-    line-height: 70px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-}
-
-.campus {
-    float: right;
-}
-
-.teacher {
-    float: left;
-    margin-bottom: 60px;
-}
- .container2 h1 {
-     text-align: center;
-
+0*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'poppins', sans-serif6;
  }
+.header{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(97, 119, 190, 0.7),rgba(27, 53, 87, 0.7)),url(stu.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    text-align: left;
+    text-decoration: none;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    }
+    .nav-links ul li ::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+    .text-box{
+        width: 90%;
+        color: #fff;
+        position: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        text-align: center;
+    }
+    .text-box h1{
+        font-size: 62px;
+        margin-top: 30vh;
+        text-align: center;
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .hero-btn:hover{
+        border: #f44336;
+        background: #f44336;
+        transition: 1s0;
+    }
+
+    nav .fa{
+        display: none;
+    }
+    
+    @media(max-width: 700px){
+        .text-box h1{
+            font-size: 20px;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links{
+                position: absolute;
+                background: #f44336;
+                height: 100vh;
+                width: 200vh;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+                
+            }
+            nav .fa{
+                display: block;
+                color: #fff;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+    }
+
+  
+
+
